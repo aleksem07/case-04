@@ -1,0 +1,29 @@
+mixin city-nav(title, href='#', blue)
+  li.city-item
+    if blue
+      a.link-item(href=href class= 'link-blue') #{title}
+    else
+      a.link-item(href=href) #{title}
+
+mixin site-nav(title, href='#')
+  li.site-navigation-item
+    if href
+      a.link-item(href=href) #{title}
+    else
+      a.link-item(href='#') #{title}
+
+header.main-header
+  .container
+    main.main-header-nav
+
+      ul.city-list
+        +city-nav('Санкт-Петербург', '#', true)
+        +city-nav('Москва')
+        +city-nav('Минск')
+
+      ul.site-navigation
+        +site-nav('Программа')
+        +site-nav('Отзывы')
+        +site-nav('Стоимость')
+        +site-nav('О преподавателе')
+      a.link-register(href='#') Запись на курс

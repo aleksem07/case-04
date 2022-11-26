@@ -1,0 +1,39 @@
+.program {
+  margin-left: 120px;
+  margin-bottom: 127px;
+}
+
+.container--programm {
+  position: relative;
+}
+
+.program-item-topic {
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  // font-size: 16px;
+  font-weight: bold;
+  color: $text_blue;
+}
+
+.container--programm .section-title {
+  margin-bottom: 52px;
+}
+
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 69px;
+  row-gap: 60px;
+  width: 50%;
+  margin-bottom: 92px;
+}
+
+.program-item {
+  width: 33%;
+}
+
+.program-link {
+  border-bottom: 1px dashed $text_blue;
+  color: $text_blue;
+  text-transform: uppercase;
+}

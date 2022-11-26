@@ -1,0 +1,75 @@
+.promo-wrapper {
+  height: 600px;
+  display: flex;
+  gap: 30px;
+}
+
+.promo-rating-column,
+.promo-text-column {
+  width: 50%;
+}
+
+.promo-rating-column {
+  display: flex;
+}
+
+.rating {
+  align-self: flex-end;
+  gap: 10px;
+  margin-left: 163px;
+  margin-bottom: 47px;
+  color: $text_blue;
+  text-align: center;
+}
+
+.rating-highlight-text {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.rating-link {
+  color: $text_blue;
+  font-size: 12px;
+}
+
+.rating-link svg {
+  padding-top: 5px;
+  margin-left: 5px;
+  color: $text_blue;
+}
+
+.promo-text-column {
+  color: $basic_white;
+  padding-top: 40px;
+}
+
+.promo-text-compact {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.promo-text-compact:last-of-type {
+  margin-bottom: 53px;
+  text-transform: none;
+  letter-spacing: 2.5px;
+}
+
+.promo-text {
+  margin-bottom: 27px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  line-height: 3rem;
+}
+
+.link-register-aqua {
+  margin-left: 15px;
+  width: 150px;
+  padding: 15px 41px;
+  outline: 15px solid $button_aqua--transparent;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: $basic_white;
+  background-color: $button_aqua;
+  font-weight: bold;
+}

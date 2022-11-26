@@ -1,0 +1,18 @@
+extends layout/layout
+
+block variables
+  title= 'Оффлайн курс Customer Development'
+  - var pageClass = "index-page"
+
+block content
+  main(class= pageClass)
+    h1.visually-hidden Оффлайн курс Customer Development
+    .header-bg
+      include modules/header
+      include modules/promo
+    include modules/audience
+    include modules/program
+    include modules/result
+    include modules/speaker
+    include modules/gallery
+    include modules/tariff

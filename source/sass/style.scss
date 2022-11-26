@@ -1,0 +1,25 @@
+//viewports
+$min-width: 280px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+
+//global
+@import "color";
+@import "global";
+@import "fonts";
+@import "button";
+@import "layout/_ball";
+
+//blocks
+@import "blocks/_page";
+@import "blocks/_header";
+@import "blocks/_promo";
+@import "blocks/_audience";
+@import "blocks/_program";
+@import "blocks/_result";
+@import "blocks/_speaker";
+@import "blocks/_gallery";
+@import "blocks/_tariff";
+
+@import "blocks/_footer";
