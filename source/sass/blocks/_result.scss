@@ -1,11 +1,10 @@
 .result {
   margin-bottom: 133px;
-  height: 900px;
-  background-image: url("../img/bg-21.png"),
-    url("../img/bg-22.png"),
-    url("../img/bg-23.png");
+  min-height: 950px;
+  background: url("../img/bg-21.png") 0 100px,
+    url("../img/bg-22.png") 0 40px,
+    url("../img/bg-23.png") 0 -20px;
   background-repeat: no-repeat;
-  background-position: left;
 }
 
 .result-title {
@@ -46,19 +45,19 @@
 }
 
 .result-item:nth-child(1)::before {
-  background: url(../../img/icon-2.png);
+  background: url(../img/icon-2.png);
 }
 
 .result-item:nth-child(2)::before {
-  background: url(../../img/icon-4.png);
+  background: url(../img/icon-4.png);
 }
 
 .result-item:nth-child(3)::before {
-  background: url(../../img/icon-1.png);
+  background: url(../img/icon-1.png);
 }
 
 .result-item:nth-child(4)::before {
-  background: url(../../img/icon-3.png);
+  background: url(../img/icon-3.png);
 }
 
 .result-item-title {

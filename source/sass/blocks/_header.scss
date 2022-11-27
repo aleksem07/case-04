@@ -1,11 +1,26 @@
 .main-header {
+  position: relative;
   padding-top: 30px;
   margin-bottom: 50px;
 }
 
+.main-header-nav--bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(to right, $bg_dark-blue--transparent, $bg_dark-blue);
+  border-radius: 10% 0 0 50%;
+  box-shadow: 10px 0 30px $bg_dark-blue;
+  z-index: -1;
+}
+
 .header-bg {
+  position: relative;
   margin-bottom: 125px;
-  background-image: url("../img/bg.png"), url("../img/bg-2.png"), url("../img/bg-3.png");
+  background-origin: padding-box;
+  background: url("../img/bg.png"), url("../img/bg-2.png"), url("../img/bg-3.png");
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -20,8 +35,8 @@
 
 .city-list {
   display: flex;
-  gap: 20px;
-  flex: 0;
+  gap: 40px;
+  margin-right: auto;
   min-width: max-content;
   margin-left: 8vh;
   text-transform: uppercase;
@@ -31,10 +46,13 @@
   display: flex;
   justify-content: flex-end;
   flex: 1;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .site-navigation-item {
   margin-right: 40px;
+  width: max-content;
 }
 
 .link-item {
@@ -49,6 +67,7 @@
 .link-register {
   flex: 0 1 auto;
   margin-right: 10vh;
+  margin-left: auto;
   padding: 10px 25px;
   border-radius: 50px;
   text-align: center;
