@@ -9,6 +9,12 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Name</title><link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700" rel="stylesheet" />
+    <link rel="icon" href="img/favicon/favicon-32.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
   </head>
   <body class="page__body">
     <main class="index-page">
@@ -163,8 +169,8 @@
         </div>
       </section>
       <section class="speaker">
-        <div class="container">
-          <h2 class="section-title">Почему мне можно доверять</h2>
+        <div class="container speaker-container">
+          <h2 class="speaker-title">Почему мне можно доверять</h2>
           <div class="speaker-wrapper">
             <div class="speaker-video"><img class="speaker-img" src="img/image-62.jpg" width="727" height="392" alt="Алексей Иванов Ex-Lead Product Manager"></div>
             <div class="speaker-info">
@@ -182,7 +188,7 @@
               </p>
             </li>
             <li class="speaker-skills-item">
-              <p class="speaker-skill">Обучил CustDev`у 400+ человек</p>
+              <p class="speaker-skill">Обучил CustDev`у <br> 400+ человек</p>
               <p class="speaker-skill-description">
                 400+ человек уже прошли курс по CustDev и проверке гипотез в рамках
                 отдельного курса, так и в составе
@@ -207,7 +213,7 @@
         </div>
       </section>
       <section class="gallery">
-        <div class="container container-wide">
+        <div class="container-wide">
           <h2 class="section-title gallery-title">Как проходили прошлые потоки</h2>
           <ul class="gallery-list">
                   <li class="gallery-item"><img class="gallery-item-img" src="img/image-8.jpg" width="341" height="267" alt="photo 1"></li>
@@ -225,23 +231,30 @@
         <div class="container">
           <h2 class="section-title tariff-title">Стоимость для компаний</h2>
           <ul class="tariff-list">
-            <li class="tariff-item">
-              <p class="tariff-price">32 900 ₽</p>
-              <p class="tariff-description">1 сотрудник</p><a class="buy-link" href="#">Оформить</a>
-            </li>
-            <li class="tariff-item">
-              <p class="tariff-price">29 900 ₽ / чел</p>
-              <p class="tariff-description">2 сотрудника</p><a class="buy-link" href="#">Оформить</a>
-            </li>
-            <li class="tariff-item">
-              <p class="tariff-price">26 900 ₽ / чел</p>
-              <p class="tariff-description">5+ сотрудников</p><a class="buy-link" href="#">Оформить</a>
-            </li>
-            <li class="tariff-item">
-              <p class="tariff-price">25 900 ₽</p>
-              <p class="tariff-description">Тариф “Для себя”</p><a class="buy-link" href="#">Оформить</a>
-            </li>
+                  <li class="tariff-item">
+                    <p class="tariff-price">32 900 ₽</p>
+                    <p class="tariff-description">1 сотрудник</p><a class="link-register buy-link" href="#">Оформить</a>
+                  </li>
+                  <li class="tariff-item">
+                    <p class="tariff-price">29 900 ₽ / чел</p>
+                    <p class="tariff-description">2 сотрудника</p><a class="link-register buy-link" href="#">Оформить</a>
+                  </li>
+                  <li class="tariff-item profitably">
+                    <p class="tariff-price">26 900 ₽ / чел</p>
+                    <p class="tariff-description">5 сотрудников</p><a class="link-register buy-link" href="#">Оформить</a>
+                  </li>
+                  <li class="tariff-item">
+                    <p class="tariff-price">25 900 ₽</p>
+                    <p class="tariff-description">Тариф &quot;Для себя&quot;</p><a class="link-register buy-link" href="#">Оформить</a>
+                  </li>
           </ul>
+          <div class="tariff-bg"></div>
+        </div>
+        <div class="ball ball__position--tariff">
+          <div class="ball__shadow"></div>
+        </div>
+        <div class="ball ball__position-small--tariff ball__size-small--tariff">
+          <div class="ball__shadow ball__shadow--tariff"></div>
         </div>
       </section>
     </main>

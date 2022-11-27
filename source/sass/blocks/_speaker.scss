@@ -1,0 +1,119 @@
+.speaker-container {
+  max-width: 1200px;
+  margin-left: 121px;
+  margin-bottom: 110px;
+}
+
+.speaker-title {
+  margin-bottom: 90px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.speaker-wrapper {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 84px;
+}
+
+.speaker-video {
+  position: relative;
+}
+
+.speaker-img {
+  border-radius: 20px;
+}
+
+.speaker-video::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: $text_blue--transparent;
+  z-index: 10;
+}
+
+.speaker-video::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 49%;
+  width: 30px;
+  height: 30px;
+  border: 20px solid transparent;
+  border-left: 20px solid $basic_white;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.speaker-info {
+  margin-top: 105px;
+  width: 354px;
+  height: 201px;
+  padding: 50px;
+  background-color: $background;
+  box-shadow: 0 25px 70px $light_blue;
+  text-align: center;
+}
+
+.speaker-name {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  color: $text_blue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.speaker-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+}
+
+.speaker-skills-item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+}
+
+.speaker-skills-item:nth-child(1)::before {
+  background-image: url(../img/icons/bullhorn.svg);
+}
+
+.speaker-skills-item:nth-child(2)::before {
+  background-image: url(../img/icons/lecture.svg);
+}
+
+.speaker-skills-item:nth-child(3)::before {
+  background-image: url(../img/icons/chat.svg);
+}
+
+.speaker-skills-item:nth-child(4)::before {
+  background-image: url(../img/icons/onlineclass.svg);
+}
+
+.speaker-skill {
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $text_blue;
+}
+
+.speaker-skills-item {
+  max-width: 200px;
+}
+
+.speaker-skills-item:not(:nth-child(1)) {
+  margin-left: 106px;
+}
+
+.speaker-skills-item:nth-child(5n) {
+  margin-left: 0;
+}

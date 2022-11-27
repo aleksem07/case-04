@@ -1,7 +1,9 @@
 .result {
-  margin-bottom: 123px;
+  margin-bottom: 133px;
   height: 900px;
-  background-image: url("../img/bg-21.png"), url("../img/bg-22.png"), url("../img/bg-23.png");
+  background-image: url("../img/bg-21.png"),
+    url("../img/bg-22.png"),
+    url("../img/bg-23.png");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -24,7 +26,7 @@
 
 .result-item {
   position: relative;
-  padding-block: 54px;
+  padding-block: 40px;
   padding-right: 82px;
   padding-left: 150px;
   flex: 0 44%;
@@ -34,7 +36,7 @@
 }
 
 .result-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 60px;
   left: 57px;
@@ -43,23 +45,24 @@
   background-repeat: no-repeat;
 }
 
-.result-item:nth-child(1):before {
+.result-item:nth-child(1)::before {
   background: url(../../img/icon-2.png);
 }
 
-.result-item:nth-child(2):before {
+.result-item:nth-child(2)::before {
   background: url(../../img/icon-4.png);
 }
 
-.result-item:nth-child(3):before {
+.result-item:nth-child(3)::before {
   background: url(../../img/icon-1.png);
 }
 
-.result-item:nth-child(4):before {
+.result-item:nth-child(4)::before {
   background: url(../../img/icon-3.png);
 }
 
 .result-item-title {
+  margin-top: 15px;
   margin-bottom: 11px;
   text-transform: uppercase;
   color: $text_blue;

@@ -1,21 +1,33 @@
+mixin tariff-item(price, person, profitably)
+  li.tariff-item(class=profitably)
+    if (person == 1)
+      p.tariff-price #{price} ₽
+      p.tariff-description #{person} сотрудник
+    else if (person > 1 && person < 5)
+      p.tariff-price #{price} ₽ / чел
+      p.tariff-description #{person} сотрудника
+    else if (person >= 5 && person <= 20)
+      p.tariff-price #{price} ₽ / чел
+      p.tariff-description #{person} сотрудников
+    else if (person > 20)
+      p.tariff-price #{price} ₽ / чел
+      p.tariff-description #{person} человек
+    else
+      p.tariff-price #{price} ₽
+      p.tariff-description #{person}
+    a.link-register.buy-link(href='#') Оформить
+
 section.tariff
-    .container
-      h2.section-title.tariff-title
-        | Стоимость для компаний
-      ul.tariff-list
-        li.tariff-item
-          p.tariff-price 32 900 ₽
-          p.tariff-description 1 сотрудник
-          a.buy-link(href='#') Оформить
-        li.tariff-item
-          p.tariff-price 29 900 ₽ / чел
-          p.tariff-description 2 сотрудника
-          a.buy-link(href='#') Оформить
-        li.tariff-item
-          p.tariff-price 26 900 ₽ / чел
-          p.tariff-description 5+ сотрудников
-          a.buy-link(href='#') Оформить
-        li.tariff-item
-          p.tariff-price 25 900 ₽
-          p.tariff-description Тариф “Для себя”
-          a.buy-link(href='#') Оформить
+  .container
+    h2.section-title.tariff-title
+      | Стоимость для компаний
+    ul.tariff-list
+      +tariff-item('32 900', 1)
+      +tariff-item('29 900', 2)
+      +tariff-item('26 900', 5, 'profitably')
+      +tariff-item('25 900', 'Тариф "Для себя"')
+    .tariff-bg
+  .ball.ball__position--tariff
+    .ball__shadow
+  .ball.ball__position-small--tariff.ball__size-small--tariff
+    .ball__shadow.ball__shadow--tariff

@@ -1,5 +1,23 @@
+.gallery {
+  margin-bottom: 216px;
+}
+
 .gallery-list {
   display: flex;
-  gap: 12px;
+  gap: 25px;
   flex-wrap: wrap;
+}
+
+.gallery-item {
+  box-shadow: 10px -10px 20px $basic_color--transparent;
+}
+
+.container-wide {
+  margin: 0;
+  padding: 0;
+}
+
+.section-title.gallery-title {
+  margin-bottom: 69px;
+  text-align: center;
 }

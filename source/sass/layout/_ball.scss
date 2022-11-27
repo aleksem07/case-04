@@ -45,3 +45,27 @@
   top: 74px;
   right: 522px;
 }
+
+.ball__position--tariff {
+  position: absolute;
+  top: -150px;
+  right: -60px;
+}
+
+.ball__position-small--tariff {
+    position: absolute;
+    bottom: 20px;
+    left: -50px;
+  }
+
+.ball__size-small--tariff {
+  width: 120px;
+  height: 120px;
+  box-shadow: inset 0 0 80px 10px $ball_mini;
+}
+
+.ball__shadow--tariff{
+  width: 120px;
+  height: 120px;
+  box-shadow: 0 0 25px $ball_mini;
+}

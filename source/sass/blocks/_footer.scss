@@ -18,12 +18,18 @@
   margin-inline: -20px;
   padding-block: 30px;
   padding-inline: 8%;
-  // padding-bottom: 100px;
   display: flex;
   justify-content: space-between;
   background-color: $bg_dark-blue;
+  color: $basic_white;
 }
 
 .main-footer-links {
   display: flex;
+  gap: 20px;
+}
+
+.main-footer-link {
+  color: $basic_white;
+
 }
